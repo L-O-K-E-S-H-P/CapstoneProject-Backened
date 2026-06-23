@@ -32,7 +32,7 @@ jobs:
       - name: 🏗️ Build All Microservices
         run: mvn clean install -DskipTests --no-transfer-progress
 
-      - name: 🔍 Verify Discovery Service (Eureka)
+      - name: 🔍 Verify Discovery Service
         run: mvn verify -pl Discovery-client -DskipTests --no-transfer-progress
 
       - name: 🔀 Verify API Gateway
